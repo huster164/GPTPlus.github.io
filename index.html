@@ -41,34 +41,54 @@
 <body class="font-sans bg-white text-gray-900 overflow-x-hidden">
     
     <!-- Hero Section 首屏 -->
-    <section class="min-h-screen flex items-center justify-center px-4 py-20 gradient-bg relative overflow-hidden">
-        <div class="absolute inset-0 bg-black/10"></div>
+    <section class="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50"></div>
         <div class="container mx-auto text-center relative z-10 opacity-0 fade-in" id="hero" style="opacity: 1;">
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
                 ChatGPT Plus
                 <span class="block text-3xl md:text-5xl font-light mt-2">一键秒充 ChatGPT</span>
             </h1>
-            <p class="text-xl md:text-2xl text-white/90 mb-12 font-light">
+
+             <!-- 信任徽章（响应式优化 - 网页端更大更醒目） -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-8">
+                <span class="inline-flex items-center px-4 py-2 md:px-6 md:py-3 bg-white text-base text-sm md:text-base font-bold rounded-full border-2 border-white/30 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <span class="mr-2 md:mr-3 text-lg md:text-xl">🔒</span>不封号
+                </span>
+                <span class="inline-flex items-center px-4 py-2 md:px-6 md:py-3 bg-white text-base text-sm md:text-base font-bold rounded-full border-2 border-white/30 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <span class="mr-2 md:mr-3 text-lg md:text-xl">🛡️</span>不泄露账号
+                </span>
+                <span class="inline-flex items-center px-4 py-2 md:px-6 md:py-3 bg-white text-base text-sm md:text-base font-bold rounded-full border-2 border-white/30 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <span class="mr-2 md:mr-3 text-lg md:text-xl">👥</span>50000+满意客户
+                </span>
+                <span class="inline-flex items-center px-4 py-2 md:px-6 md:py-3 bg-white text-base text-sm md:text-base font-bold rounded-full border-2 border-white/30 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <span class="mr-2 md:mr-3 text-lg md:text-xl">✅</span>99.9%成功率
+                </span>
+                <span class="inline-flex items-center px-4 py-2 md:px-6 md:py-3 bg-white text-base text-sm md:text-base font-bold rounded-full border-2 border-white/30 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <span class="mr-2 md:mr-3 text-lg md:text-xl">🕒</span>24/7小时在线客服
+                </span>
+            </div>
+
+            <p class="text-xl md:text-2xl text-gray-600 mb-12 font-light">
                 20 秒完成充值，永久免费教程
             </p>
-            
-            <!-- 主按钮组 -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-                <a href="https://sc.yfk6.com//links/9DCAD1FC" target="_blank" class="inline-flex items-center px-8 py-4 bg-white text-indigo-600 font-semibold rounded-2xl shadow-lg hover:-translate-y-0.5 hover:scale-105 transition-all duration-300" onclick="trackEvent(&#39;purchase_click&#39;)">
-                    <span>💎 购买卡密</span>
-                </a>
-                <a href="https://www.ow520.com/" target="_blank" class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-2xl hover:bg-white hover:text-indigo-600 hover:-translate-y-0.5 transition-all duration-300" onclick="trackEvent(&#39;recharge_click&#39;)">
-                    <span>⚡ 充值Plus</span>
-                </a>
-            </div>
-            
-            <!-- 视频教程 -->
-            <div class="max-w-4xl mx-auto">
-                <video class="w-full rounded-2xl shadow-2xl" controls="" muted="" poster="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 800 450&#39;%3E%3Crect width=&#39;800&#39; height=&#39;450&#39; fill=&#39;%23f3f4f6&#39;/%3E%3Ctext x=&#39;50%25&#39; y=&#39;50%25&#39; dominant-baseline=&#39;middle&#39; text-anchor=&#39;middle&#39; font-family=&#39;Inter&#39; font-size=&#39;24&#39; fill=&#39;%236b7280&#39;%3E视频教程%3C/text%3E%3C/svg%3E">
-                    <source src="http://cloud.video.taobao.com/play/u/null/p/1/e/6/t/1/514196921671.mp4" type="video/mp4">
-                    您的浏览器不支持视频播放
-                </video>
-            </div>
+        
+        <!-- 主按钮组 -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <a href="https://sc.yfk6.com//links/9DCAD1FC" target="_blank" class="inline-flex items-center px-8 py-4 bg-white text-indigo-600 font-semibold rounded-2xl shadow-lg hover:-translate-y-0.5 hover:scale-105 transition-all duration-300" onclick="trackEvent(&#39;purchase_click&#39;)">
+                <span style="font-size: 20px;">1. 💎 购买卡密</span>
+            </a>
+            <a href="https://www.ow521.com/recharge" target="_blank" class="inline-flex items-center px-8 py-4 bg-white text-indigo-600 font-semibold rounded-2xl shadow-lg hover:-translate-y-0.5 hover:scale-105 transition-all duration-300" onclick="trackEvent(&#39;recharge_click&#39;)">
+                <span style="font-size: 20px;">2. ⚡ 充值Plus</span>
+            </a>
+        </div>
+        
+        <!-- 视频教程 -->
+        <div class="max-w-4xl mx-auto">
+            <video class="w-full rounded-2xl shadow-2xl" controls="" muted="" poster="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 800 450&#39;%3E%3Crect width=&#39;800&#39; height=&#39;450&#39; fill=&#39;%23f3f4f6&#39;/%3E%3Ctext x=&#39;50%25&#39; y=&#39;50%25&#39; dominant-baseline=&#39;middle&#39; text-anchor=&#39;middle&#39; font-family=&#39;Inter&#39; font-size=&#39;24&#39; fill=&#39;%236b7280&#39;%3E视频教程%3C/text%3E%3C/svg%3E">
+                <source src="http://cloud.video.taobao.com/play/u/null/p/1/e/6/t/1/514196921671.mp4" type="video/mp4">
+                您的浏览器不支持视频播放
+            </video>
+        </div>
         </div>
     </section>
 
@@ -79,14 +99,14 @@
             <div class="flex flex-col md:flex-row items-center justify-center gap-8">
                 <div class="text-center">
                     <div class="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">1</div>
-                    <h3 class="text-xl font-semibold mb-2">点击购买</h3>
+                    <h3 class="text-xl font-semibold mb-2">点击购买卡密</h3>
                     <p class="text-gray-600">选择套餐完成付款</p>
                 </div>
                 <div class="hidden md:block w-20 h-1 bg-gradient-to-r from-indigo-600 to-teal-500 rounded"></div>
                 <div class="text-center">
                     <div class="w-20 h-20 bg-teal-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">2</div>
-                    <h3 class="text-xl font-semibold mb-2">获取登录</h3>
-                    <p class="text-gray-600">登录您的 ChatGPT 账号</p>
+                    <h3 class="text-xl font-semibold mb-2">使用卡密兑换Plus会员</h3>
+                    <p class="text-gray-600">需要登录您的 ChatGPT 账号</p>
                 </div>
                 <div class="hidden md:block w-20 h-1 bg-gradient-to-r from-teal-500 to-green-500 rounded"></div>
                 <div class="text-center">
@@ -98,8 +118,32 @@
         </div>
     </section>
 
-    <!-- Features Section 特性介绍 -->
+    <!-- 价格对比 -->
     <section class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto opacity-0 fade-in" id="pricing" style="opacity: 1;">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">价格对比</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="flex items-center justify-between p-6 border-b">
+                        <span class="text-lg font-semibold">充值方式</span>
+                        <span class="text-lg font-semibold">价格</span>
+                    </div>
+                    <div class="flex items-center justify-between p-6 bg-red-50">
+                        <span class="text-gray-700">App 内官方充值</span>
+                        <span class="text-red-600 font-bold text-xl">¥145</span>
+                    </div>
+                    <div class="flex items-center justify-between p-6 bg-blue-50">
+                        <span class="text-gray-700">我们的服务</span>
+                        <span class="text-blue-600 font-bold text-xl">¥140</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section 特性介绍 -->
+    <section class="py-20 px-4 bg-gradient-to-r from-blue-50 to-indigo-50 border-y border-blue-100">
         <div class="container mx-auto opacity-0 fade-in" id="features" style="opacity: 1;">
             <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">为什么选择我们？</h2>
             <div class="grid md:grid-cols-3 gap-8">
@@ -129,7 +173,7 @@
     </section>
 
     <!-- 信任保障区域 -->
-    <section class="py-16 px-4 bg-gradient-to-r from-blue-50 to-indigo-50 border-y border-blue-100">
+    <section class="py-16 px-4 bg-white">
         <div class="container mx-auto opacity-0 fade-in" id="trust" style="opacity: 1;">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
@@ -178,14 +222,14 @@
                             <div class="p-4 bg-green-50 rounded-xl border border-green-200">
                                 <p class="text-gray-700 mb-2">专属客服微信：</p>
                                 <div class="flex items-center justify-between">
-                                    <span class="font-mono text-lg font-semibold text-green-700">lxs_614205772</span>
+                                    <span class="font-mono text-lg font-semibold text-green-700">l_elephant_rabbit</span>
                                     <button onclick="copyWechat()" class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm">
                                         复制微信号
                                     </button>
                                 </div>
                             </div>
                             <div class="text-sm text-gray-500 bg-gray-50 p-3 rounded-lg">
-                                <p>💡 温馨提示：已添加过 <span class="font-mono">lxs_614205772</span> 的用户无需重复添加</p>
+                                <p>💡 温馨提示：已添加过 <span class="font-mono">l_elephant_rabbit</span> 的用户无需重复添加</p>
                             </div>
                         </div>
                     </div>
@@ -214,7 +258,7 @@
     </section>
 
     <!-- 使用说明区域 -->
-    <section class="py-20 px-4 bg-white">
+    <section class="py-20 px-4 bg-gray-50">
         <div class="container mx-auto opacity-0 fade-in" id="usage" style="opacity: 1;">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
@@ -236,7 +280,7 @@
                             <div class="flex items-start">
                                 <div class="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 mt-1">2</div>
                                 <div>
-                                    <h3 class="text-xl font-semibold text-gray-900 mb-2">打开 gptplus.biz 进行充值</h3>
+                                    <h3 class="text-xl font-semibold text-gray-900 mb-2">打开 ow521.com 进行充值</h3>
                                     <p class="text-gray-600">访问充值网站，按照页面提示完成充值操作</p>
                                     <p class="text-sm text-green-600 mt-2">📺 可以结合上方视频教程一步步操作</p>
                                 </div>
@@ -250,33 +294,9 @@
                             <span class="mr-2 text-2xl">👥</span>
                             <span class="font-semibold text-lg">需要代理价优惠？</span>
                             <span class="mx-3 text-orange-500">→</span>
-                            <span class="font-mono bg-orange-100 px-4 py-2 rounded-lg text-orange-700 font-semibold">微信: lxs_614205772</span>
+                            <span class="font-mono bg-orange-100 px-4 py-2 rounded-lg text-orange-700 font-semibold">微信: l_elephant_rabbit</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 价格对比 -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="container mx-auto opacity-0 fade-in" id="pricing" style="opacity: 1;">
-            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">价格对比</h2>
-            <div class="max-w-2xl mx-auto">
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <div class="flex items-center justify-between p-6 border-b">
-                        <span class="text-lg font-semibold">充值方式</span>
-                        <span class="text-lg font-semibold">价格</span>
-                    </div>
-                    <div class="flex items-center justify-between p-6 bg-red-50">
-                        <span class="text-gray-700">App 内官方充值</span>
-                        <span class="text-red-600 font-bold text-xl">¥145</span>
-                    </div>
-                    <div class="flex items-center justify-between p-6 bg-blue-50">
-                        <span class="text-gray-700">我们的服务</span>
-                        <span class="text-blue-600 font-bold text-xl">¥140</span>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -285,12 +305,12 @@
     <!-- Footer 底部 -->
     <footer class="bg-gray-900 text-white py-12 px-4">
         <div class="container mx-auto text-center">
-            <h3 class="text-2xl font-bold mb-4">GPT Plus 充值服务</h3>
+            <h3 class="text-2xl font-bold mb-4">ChatGPT Plus 充值服务</h3>
             <p class="text-gray-400 mb-6">安全 · 快速 · 省钱</p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
                 <div class="flex items-center justify-center text-gray-400">
                     <span class="mr-2">💬</span>
-                    <span>客服微信: lxs_614205772</span>
+                    <span>客服微信: l_elephant_rabbit</span>
                 </div>
                 <div class="flex items-center justify-center text-gray-400">
                     <span class="mr-2">📱</span>
@@ -307,7 +327,7 @@
 
     <!-- 客服悬浮按钮 -->
     <div class="fixed bottom-6 right-6 z-50">
-        <a href="/cdn-cgi/l/email-protection#30434540405f4244705548515d405c551e535f5d" class="w-14 h-14 bg-gradient-to-r from-indigo-600 to-teal-500 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300">
+        <a href="/cdn-cgi/l/email-protection#30434540405f4244705548515d405c551e535f5d" class="w-14 h-14 bg-gradient-to-r from #3b82f6 to #8b5cf6 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300">
             <span class="text-xl">💬</span>
         </a>
     </div>
