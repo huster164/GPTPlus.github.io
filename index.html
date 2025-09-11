@@ -325,20 +325,6 @@
         </div>
     </footer>
 
-    <!-- 客服悬浮按钮 -->
-    <div class="fixed bottom-6 right-6 z-50">
-        <a href="/cdn-cgi/l/email-protection#30434540405f4244705548515d405c551e535f5d" class="w-14 h-14 bg-gradient-to-r from #3b82f6 to #8b5cf6 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300">
-            <span class="text-xl">💬</span>
-        </a>
-    </div>
-
-    <!-- 暗黑模式切换按钮 -->
-    <div class="fixed top-6 right-6 z-50">
-        <button id="darkModeToggle" class="w-12 h-12 bg-white/20 backdrop-blur-sm text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300">
-            <span id="darkModeIcon">🌙</span>
-        </button>
-    </div>
-
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // 页面加载动画
         document.addEventListener('DOMContentLoaded', function() {
@@ -400,16 +386,6 @@
                 }, 300);
             }, 2000);
         }
-
-        // 暗黑模式切换
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const darkModeIcon = document.getElementById('darkModeIcon');
-        
-        darkModeToggle.addEventListener('click', function() {
-            document.documentElement.classList.toggle('dark');
-            const isDark = document.documentElement.classList.contains('dark');
-            darkModeIcon.textContent = isDark ? '☀️' : '🌙';
-        });
 
         // 平滑滚动增强
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
